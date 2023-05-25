@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+
+<body>
+    <h1>Programming Language</h1>
+    <ul>
+        <li class="language">자바</li>
+        <li class="language">자바스크립트</li>
+        <li class="language">파이썬</li>
+    </ul>
+</body>
+
+
+<body>
+    <h1>Programming Language</h1>
+    <ul>
+        <li>자바</li>
+        <li>자바스크립트</li>
+        <li>파이썬</li>
+    </ul>
+</body>
+
+<script>
+    // DOM API(쿼리 셀렉터)를 이용하여 클래스가 .language인 Node들을 가지고 온다.
+    var language = document.querySelectorAll(".language");
+
+    // Node들을 하나씩 반복시킨다.
+    for (let i = 0; i < language.length; i++){
+
+        // 노드 리스트에서 노드 1개를 꺼내온다.
+        var selectLanguage = language[i];
+        
+        // 해당 노드의 텍스트 값을 로그에 찍는다.
+        console.log(selectLanguage.textContent);
+
+        // click 할 경우 해당 요소의 내용이 바뀌는 함수를 설정한다.
+        selectLanguage.onclick = function(){
+            language[i].textContent = language[i].textContent + " 어렵다...";    
+        } 
+    }
+</script>
+</html>
+
+
