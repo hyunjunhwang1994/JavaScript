@@ -34,7 +34,7 @@ val = document.links[1].className[2]; // <a> 요소 중 하나의 className[2]�
 val = document.images; // <img> 태그들을 반환
 val = document.scripts; // <script> 태그들을 반환
 val = document.scripts[0].getAttribute('src'); // script의 src 확인
-console.log(val);
+// console.log(val);
 
 
 
@@ -62,9 +62,9 @@ document.innerText; // 사용자에게 보여지는 텍스트 값을 읽어오�
 document.innerHTML; // HTML 까지 같이 보여줍니다.
 
 let container = document.getElementById('test-container')
-console.log("textContent: " + container.textContent);
-console.log("innerText: " + container.innerText);
-console.log("innerHTML: " + container.innerHTML);
+// console.log("textContent: " + container.textContent);
+// console.log("innerText: " + container.innerText);
+// console.log("innerHTML: " + container.innerHTML);
 
 
 // 활용 예시
@@ -79,7 +79,7 @@ let lists = document.getElementsByTagName('li') // 해당 태그 이름의 요�
 
 // Collection -> Array: forEach 사용 가능
 lists = Array.from(lists)
-console.log(lists);
+// console.log(lists);
 
 
 // 배열에서 사용하는 메서드 사용 가능
@@ -108,10 +108,10 @@ onclickLists.forEach((list) =>{
 
 // 3. 
 const items = document.getElementsByClassName('list-group-item')
-console.log(items);
+// console.log(items);
 
-items[0].style.color = 'blue'
-items[3].textContent = 'Hi'
+// items[0].style.color = 'blue'
+// items[3].textContent = 'Hi'
 
 
 
